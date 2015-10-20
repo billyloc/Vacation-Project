@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>{{vacation name}}</title>
+	<style>
+		html {
+		    box-sizing: border-box;
+		    color: black;
+		    font-family: "Open Sans", sans-serif;
+		}
+
+		*, *::before, *::after {
+		    box-sizing: inherit;
+		    color: inherit;
+		    font-family: inherit;
+		}
+		header {
+			padding: 25px;
+			position: relative;
+			background-color: orange;
+		}
+		.logo {
+			position: absolute;
+			top: 0;
+			left: 0;
+			color: blue;
+			font-size: 35px;
+		}
+		.login {
+			position: absolute;
+			bottom: 5px;
+			right: 0;
+		}
+		nav {
+			display: flex;
+			background-color: blue;
+			padding: 10px;
+			color: white;
+			margin: 0px;
+		}
+		.dest_name {
+			font-size: 35px;
+			color: black;
+		}
+		a {
+			flex: 1;
+			text-align: center;
+			color: white;
+			text-decoration: none;
+			padding: 10px;
+
+		}
+		img {
+			width: 600px;
+			height: 455px;
+		}
+		p {
+			width: 600px;
+			color: white;
+		}
+		main {
+			display: flex;
+		}
+		hero {
+			flex: 1;
+			background-color: black;
+		}
+		.vaca_info {
+			flex: 1;
+			/*height: 400px;*/
+			padding-top: 10px;
+			text-align: center;
+			background-color: green;
+			color: black;
+			font-size: 20px;
+		}
+		.buy {
+			font-size: 50px;
+			padding-top: 50px;
+			color: red;
+		}
+		.carousel span {
+			font-size: 40px;
+			background-color: pink;
+		}
+		aside {
+			background-color: white;
+		}
+		.aside-header {
+			display: flex;
+		}
+		.fa {
+			background-color: lightblue;
+			flex: 1;
+			text-align: center;
+			padding: 20px;
+			margin: 10px;
+		}
+		aside div {
+			padding: 25px;
+			background-color: red;
+		}
+		aside img {
+			height: 460px;
+			width: 960px;
+			margin-left: 150px;
+		}
+		.middle {
+			display: flex;
+		}
+		.middle ul {
+			flex: 1;
+			margin: 0;
+			padding-top: 50px;
+			color: white;
+		}
+		.middle img {
+			flex: 1;
+			margin: 0;
+		}
+	</style>
+</head>
+<body>
+<!-- 	<header>
+		<span class="logo">Vacations 2 Go</span>
+	</header> -->
+	<nav>
+		<a href="#">Home</a>
+		<a href="#">My Account</a>
+		<a href="#">About</a>
+		<a href="#">Login</a>				
+	</nav>
+	<main>
+		<hero>
+			<img src="http://travellerguidance.com/wp-content/uploads/2013/12/Download-golden-beach-hawaii-wallpaper-background-with-original-high.jpg">
+			<p>The fresh, floral air energizes you. The warm, tranquil waters refresh you.
+			 The breathtaking, natural beauty renews you. Look around. 
+			 There’s no place on earth like Hawaii. Whether you're a new visitor or returning,
+			 our six unique islands offer distinct experiences that will entice any traveler.
+			 We warmly invite you to explore our islands and discover your ideal travel experience.</p>
+		</hero>
+		<div class="vaca_info">
+			<p class="dest_name"><b>Hawaii</b></p>
+			<p>November 6th, 2015</p>
+			<p>Your trip includes Roundtrip Airfare and Hotel, 4 Days/3 Nights</p>
+			<p>regular price $1000</p>
+			<p>Your Discount $799.00 <b>***ONLY 10% DOWN NEEDED***</b></p>
+			<p>Progress Bar ONLY 30 MORE PEOPLE NEEDED!</p>
+
+			<a class="buy" href="#">BUY</a>
+		</div>
+	</main>
+	<aside>
+		<div class="aside-header">
+			<i class="fa fa-info fa-2x"> Amenities</i>
+			<i class="fa fa-map-marker fa-2x"> Whats Popular</i> 
+			<i class="fa fa-bed fa-2x"> Whats Included</i>
+		</div>
+		<div>
+			<img src="http://www.siwallpaper.com/wp-content/uploads/2015/05/beautiful_hawaii_wallpaper_hd_6_widescreen.jpg">
+		</div>
+		<div class="middle">
+			<img src="http://1.bp.blogspot.com/-DDpBawRi7Ig/VS_owMN-TpI/AAAAAAAAEfs/stJ_rthy9ec/s1600/backgrounds-for-gt-hawaiian-beach-background.jpg">
+			<ul>
+				<li>Hotel at a Glance: The Garland Hotel</li>
+				<li>The Garland is steeped in Hollywood glamour—the hotel was founded by actress Beverly Garland, and it’s right near Universal Studios and the Hollywood Walk of Fame. Still, the hotel feels worlds away from busy Los Angeles, thanks to the leafy property’s tranquil gardens, towering pine trees, and adobe walls. Opened more than 40 years ago, the hotel retains a charming vintage vibe, though a fresh renovation has given it an upscale flavor.</li>
+				<li>A sparkling outdoor pool sits at the heart of the property, surrounded by oversize lounge cushions, topiary plants, and a white-brick chimney and fireplace.</li>
+				<li>Shop with the stars: Rodeo Drive, located 10 miles from the hotel, is one of the world’s most famous shopping centers.</li>
+				<li>Daily activities: Take a walk to see the Brady Bunch house, get fitness tips from a top trainer, or enjoy free California wine tastings. Activities change based on the season.</li>
+				<li>“The Front Yard” restaurant and lounge with outdoor seating
+				Outdoor heated pool and hot tub
+				Complimentary shuttle service to Universal Studios and CityWalk
+				Free WiFi
+				“The Store” boutique
+				</li>
+			</ul>
+		</div> 
+		<div>
+			<img src="http://www.mycoolbackgrounds.com/backgrounds/24106/Road%20to%20Hana,%20Turquoise%20Lagoon,%20Maui,%20Hawaii.jpg">
+		</div>
+	</aside>
+	<div class="carousel">
+		<div><h3>Hawaii</h3></div>
+		<div><h3>Bermuda</h3></div>
+		<div><h3>Bora Bora</h3></div>
+		<div><h3>Florida</h3></div>
+		<div><h3>New Zealand</h3></div>
+		<div><h3>Alaska</h3></div>
+	</div>
+	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script src="bower_components/slick-carousel/slick/slick.js"></script>
+	<script>
+	$(function(){
+		$('.carousel').slick({
+		  slidesToShow: 3,
+		  slidesToScroll: 1,
+		  autoplay: true,
+		  autoplaySpeed: 2000,
+		});
+	});
+	</script>
+</body>
+</html>

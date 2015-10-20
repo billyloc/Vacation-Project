@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Login</title>
+	<style>
+		html {
+		    box-sizing: border-box;
+		    color: black;
+		    font-family: "Open Sans", sans-serif;
+		}
+
+		*, *::before, *::after {
+		    box-sizing: inherit;
+		    color: inherit;
+		    font-family: inherit;
+		}
+		body {
+			background-image: url("loginphoto.jpg");
+			background-size: 1280px 700px;
+			background-repeat: none;
+		}
+
+		header {
+			padding: 25px;
+			position: relative;
+			background-color: transparent;
+		}
+		.logo {
+			position: absolute;
+			top: 0;
+			left: 0;
+			color: white;
+			font-size: 35px;
+		}
+		.login {
+			position: absolute;
+			bottom: 5px;
+			right: 0;
+		}
+		nav {
+			display: flex;
+			background-color: transparent;
+			padding: 3px;
+			color: white;
+			border-top: 1px solid white;
+			border-bottom: 1px solid white;
+		}
+		a {
+			flex: 1;
+			text-align: center;
+			color: white;
+			text-decoration: none;
+			padding: 10px;
+		}
+		div {
+			margin-left: 400px;
+			height: 250px;
+			width: 300px;
+			background-color: transparent;
+			border: 1px solid transparent;
+			margin-top: 100px;
+		}
+
+		button {
+			font-size: 20px;
+			background-color: transparent;
+			text-align: center;
+		}
+		form {
+			text-align: center;
+		}
+		ul {
+			box-sizing: border-box;
+		    padding: 10px;
+		    font-size: 25px;
+		    line-height: 25px;
+		    border-radius: 6px;
+		   	list-style: none;
+		}
+		input {
+			font-size: 15px;
+			background: transparent;
+		}
+		li {
+			margin-bottom: 20px;
+			color: white;
+		}
+	</style>
+</head>
+<body>
+<!-- 	<header>
+		<span class="logo">Vacations 2 Go</span>
+	</header> -->
+	<nav>
+		<a href="#">Home</a>
+		<a href="#">My Account</a>
+		<a href="#">About</a>
+		<a href="#">Login</a>				
+	</nav>
+	<div>
+		<form>
+			<ul>
+				<li>Username <input type="text" required></li>
+				<li>Password <input type="password" requried></li>
+				<li><button>SUBMIT</button></li>
+				<a href="#">Register</a>
+			</ul>
+		</form>
+	</div>
+</body>
+</html>

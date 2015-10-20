@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Checkout</title>
+		<style>
+/****************************************
+  Inherited Syles
+*****************************************/
+
+		html {
+		    box-sizing: border-box;
+		    color: black;
+		    font-family: "Open Sans", sans-serif;
+		}
+
+		*, *::before, *::after {
+		    box-sizing: inherit;
+		    color: inherit;
+		    font-family: inherit;
+		}
+		header {
+			padding: 10px;
+			position: relative;
+			background-color: green;
+		}
+		.logo {
+			position: absolute;
+			top: 0;
+			left: 0;
+			color: blue;
+			font-size: 35px;
+		}
+		.login {
+			position: absolute;
+			bottom: 5px;
+			right: 0;
+		}
+		nav {
+			display: flex;
+			background-color: blue;
+			padding: 10px;
+			color: white;
+			margin: 0px;
+		}
+		a {
+			flex: 2;
+			text-align: center
+		}
+		img {
+			width: 1260px;
+			height: 350px;
+		}
+		form {
+			margin: 0 auto;
+			background-color: lightgrey;
+			width: 300px;
+			height: 350px;
+			margin-top: 100px;
+			padding: 25px;
+			border-radius: 5%;
+			display: flex;
+			flex-direction: column;
+		}
+		form label {
+			display: flex;
+			flex-direction: column;
+		}
+		form div {
+			margin: 10px;
+		}
+	</style>
+</head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<body>
+	<main>
+		<div class="container">
+			<nav>
+				<a href="#">Home</a>
+				<a href="#">My Account</a>
+				<a href="#">About</a>
+				<a href="#">Login</a>				
+			</nav>
+			<div>
+				<img class="hero-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRupGwGNvrKnbSim9v4L6vrVXArv7jI5AzSeGJmX9DinNbqFlsP">
+			</div>
+		</div>
+	</main>
+	<aside>
+	<p>Thank you for your purchase to {{location}}. This will be your 10% deposit for {{amount of people}} which comes out to {{amount of deposit for x amount of people}}. You will be able to save and print your deposit on the next page if you wish.
+		Thank You again.</p>
+		<form action="">
+			<div>
+				<label>
+					<span>CC Number <i class="fa fa-credit-card fa-1x"></i></span>
+					<input type=text pattern="[0-9]{13,16}">
+				</label>
+			</div>
+			<div>
+				<label>
+					<span>EXP Date</span>
+					<input type="text" pattern="[0-9][/-, ]{4,4}"></label>
+				<label>
+			<div>
+				<label>
+					<span>CCV</span>
+					<input type="text" pattern="[0-9]{3,3}">
+				</label>
+			</div>
+			<div>
+				<label>
+					<span>Name</span>
+					<input type="text">
+				</label>
+			</div>
+			<div>
+				<label>
+					<span>Address</span>
+					<input type="text">
+				</label>
+			</div>
+			<div>
+				<button>Submit</button>
+			</div>
+		</form>
+	</aside>
+</body>
+</html>
